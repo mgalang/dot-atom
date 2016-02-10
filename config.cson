@@ -1,0 +1,44 @@
+"*":
+  "atom-autocomplete-php": {}
+  "atom-terminal":
+    app: "iTerm.app"
+  "autocomplete-php": {}
+  "autocomplete-plus":
+    enableAutoConfirmSingleSuggestion: false
+  core:
+    audioBeep: false
+  drupal:
+    fileTypesPhp: "module,install,inc,test"
+  "easy-motion-redux":
+    replaceCharacters: "abcdefghijklmnopqrstuvwxyz;,"
+  editor:
+    fontSize: 13
+    invisibles: {}
+    showInvisibles: true
+  emmet: {}
+  "keyboard-localization":
+    useKeyboardLayout: "fi_FI-mac"
+  "lazy-motion": {}
+  linter:
+    errorPanelHeight: 104
+    lintOnFly: false
+  "linter-jshint": {}
+  "linter-php": {}
+  "linter-phpcs":
+    codeStandardOrConfigFile: "Drupal"
+    executablePath: "phpcs"
+  "merge-conflicts": {}
+  "php-debug": {}
+  "terminal-plus":
+    core: {}
+    style: {}
+  "tree-view": {}
+  "vim-mode":
+    startInInsertMode: true
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
+  whitespace: {}
+".drupal.source":
+  editor:
+    showIndentGuide: true
