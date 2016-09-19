@@ -25,4 +25,7 @@
 # https://github.com/bevry/cson#what-is-cson
 
 'atom-text-editor.vim-mode:not(.insert-mode)':
-  ', w': 'easy-motion-redux:words'  
+  ', w': 'easy-motion-redux:words'
+
+'atom-text-editor':
+  'cmd-shift-r': 'tree-view:reveal-active-file'

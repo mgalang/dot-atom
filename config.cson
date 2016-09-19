@@ -1,5 +1,10 @@
 "*":
-  "atom-autocomplete-php": {}
+  "atom-autocomplete-php":
+    autoloadPaths: [
+      "vendor/autoload.php"
+      "autoload.php"
+      "drupal/vendor/autoload.php"
+    ]
   "atom-terminal":
     app: "iTerm.app"
   "autocomplete-php": {}
@@ -7,12 +12,42 @@
     enableAutoConfirmSingleSuggestion: false
   core:
     audioBeep: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "drupal"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-objective-c"
+      "language-perl"
+      "language-toml"
+      "atom-autocomplete-php"
+      "autocomplete-php"
+      "hyperclick-php"
+      "pretty-json"
+      "codebug"
+      "language-ruby-on-rails"
+      "css-color-underline"
+    ]
+    packagesWithKeymapsDisabled: []
   drupal:
     fileTypesPhp: "module,install,inc,test"
   "easy-motion-redux":
     replaceCharacters: "abcdefghijklmnopqrstuvwxyz;,"
   editor:
-    fontSize: 13
+    fontSize: 12
     invisibles: {}
     showInvisibles: true
   emmet: {}
@@ -22,6 +57,7 @@
   linter:
     errorPanelHeight: 104
     lintOnFly: false
+    showErrorPanel: false
   "linter-jshint": {}
   "linter-php": {}
   "linter-phpcs":
@@ -32,9 +68,12 @@
   "terminal-plus":
     core: {}
     style: {}
-  "tree-view": {}
+  "tree-view":
+    autoReveal: false
+    focusOnReveal: false
   "vim-mode":
     startInInsertMode: true
+    useClipboardAsDefaultRegister: false
     useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
